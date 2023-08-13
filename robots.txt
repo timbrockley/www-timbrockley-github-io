@@ -1,0 +1,10 @@
+User-agent: *
+
+Allow: /
+
+Disallow: /*.php
+Disallow: /prices.html
+Disallow: /tandcs.html
+Disallow: /terms.html
+
+Sitemap: https://www.timbrockley.co.uk/sitemap.xml

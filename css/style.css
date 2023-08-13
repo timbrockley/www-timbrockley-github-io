@@ -1,0 +1,27 @@
+html,body { background-color:#FFF; margin:0px; padding:0px; height:100%; font-family: Arial, Helvetica, sans-serif;color:#000; text-align: center; }
+h2 { margin: 15px 0px 10px 0px; }
+h3 { margin: 30px 0px 10px 0px; }
+a { text-decoration:none; color:#000; }
+a:hover { color:blue; }
+
+#info_pane { background-color:#EEE; margin: 10px 50px 20px 50px; padding: 30px 50px 30px 50px; text-align:left; }
+#info_pane a { color: royalblue; font-weight: bold; }
+#info_pane a:hover { color:blue; }
+
+#footer_text { margin: 0px 0px 0px 0px; padding: 10px 0px 20px 0px; }
+#footer_text a:hover { text-decoration: none; color: #000; }
+
+.links1, .links2 { margin: 10px 0px 10px 0px; font-weight: bold; }
+.green_link { color:green; }
+
+.banner { margin: 0px; padding: 0px; width: 90%; height: auto; }
+
+@media only screen and (min-width: 801px)
+{
+    .photo { margin: 0px; padding: 0px; width: 45%; height: auto; }
+}
+
+@media only screen and (max-width: 800px)
+{
+    .photo { margin: 0px; padding: 0px; width: 90%; height: auto; }
+}
