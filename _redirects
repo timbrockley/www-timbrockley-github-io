@@ -1,8 +1,7 @@
 /index_*					/						301
 /index.php					/						301
 
-/cosplay_*					/cosplay-photography	301
-/cosplay-photography.php	/cosplay-photography	301
+/cosplay*					/cosplay-photography	301
 
 /prices.php					/prices					301
 
