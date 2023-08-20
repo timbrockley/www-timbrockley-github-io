@@ -1,5 +1,5 @@
-/index_*					/						301
 /index.php					/						301
+/index_*					/						301
 
 /cosplay.*					/cosplay-photography	301
 /cosplay_*					/cosplay-photography	301
@@ -8,7 +8,7 @@
 
 /prices.php					/prices					301
 
-/street.php					/street-photography		301
+/street.*					/street-photography		301
 /street_photography*		/street-photography		301
 
 /portraits*					/street-portraits		301
