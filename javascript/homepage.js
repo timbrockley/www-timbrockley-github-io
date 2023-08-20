@@ -80,7 +80,7 @@ window.onload=function()
 	//------------------------------------------------------------
 	//############################################################
 	//------------------------------------------------------------
-	if(document.querySelector('mailto'))
+	if(document.getElementById('mailto') && document.getElementById('mailto').href)
 	{
 		//------------------------------------------------------------
 		let d1 = new Date();
@@ -91,7 +91,7 @@ window.onload=function()
 		//------------------------------------------------------------
 		mailtoLink = mailtoLink+'?subject='+document.title+' ('+cymd+'_'+hhmm+')';
 		//------------------------------------------------------------
-		document.getElementById('mailto').href=mailtoLink;
+		document.getElementById('mailto').href = mailtoLink;
 		//------------------------------------------------------------
 	}
 	//------------------------------------------------------------
