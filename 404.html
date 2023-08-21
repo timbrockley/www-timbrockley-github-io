@@ -11,64 +11,46 @@
 
 <script>
 
+//--------------------------------------------------------------------------------
 let chunk = null
-
+//--------------------------------------------------------------------------------
 chunk = window.location.href.substring(window.location.href.lastIndexOf("/")+1);
 chunk = chunk.replace('.php','');
 chunk = chunk.replace('.html','');
-
-if((chunk==='' || chunk==='index') && window.location.pathname.split('/').length>2)
+//--------------------------------------------------------------------------------
+if (/cosplay/.test(chunk))
 {
-    chunk = window.location.pathname.substring(window.location.pathname.indexOf('/')+1,window.location.pathname.lastIndexOf('/'));
-    chunk = chunk.substring(chunk.lastIndexOf('/')+1);
+    chunk = 'cosplay-photography'
 }
-
-switch(chunk)
+else if (/portraits/.test(chunk)) 
 {
-    case 'cosplay':
-        chunk = 'cosplay-photography.html'
-        break;
-
-    case 'cosplay-photography':
-        chunk = 'cosplay-photography.html'
-        break;
-
-    case 'portraits':
-        chunk = 'street-portraits.html'
-        break;
-
-    case 'prices':
-        chunk = 'prices.html'
-        break;
-
-    case 'street':
-        chunk = 'street-photography.html'
-        break;
-
-    case 'street-photography':
-        chunk = 'street-photography.html'
-        break;
-
-    case 'street-portraits':
-        chunk = 'street-portraits.html'
-        break;
-
-    case 'tandcs':
-        chunk = 'tandcs.html'
-        break;
-
-    case 'terms':
-        chunk = 'terms.html'
-        break;
-
-    default:
-        chunk = '';
-
+    chunk = 'street-portraits'
 }
-
+else if (/prices/.test(chunk)) 
+{
+    chunk = 'prices'
+}
+else if (/street/.test(chunk)) 
+{
+    chunk = 'street-photography'
+}
+else if (/tandcs/.test(chunk)) 
+{
+    chunk = 'tandcs'
+}
+else if (/terms/.test(chunk)) 
+{
+    chunk = 'terms'
+}
+else
+{
+    chunk = '';
+}
+//--------------------------------------------------------------------------------
 let url = 'https://www.timbrockley.co.uk/' + chunk;
-
+//--------------------------------------------------------------------------------
 window.location.href = url;
+//--------------------------------------------------------------------------------
 
 </script>
 
