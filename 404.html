@@ -15,18 +15,16 @@
 let chunk = null
 //--------------------------------------------------------------------------------
 chunk = window.location.href.substring(window.location.href.lastIndexOf("/")+1);
-chunk = chunk.replace('.php','');
-chunk = chunk.replace('.html','');
 //--------------------------------------------------------------------------------
 if (/cosplay/.test(chunk))
 {
     chunk = 'cosplay-photography'
 }
-else if (/portraits/.test(chunk)) 
+else if (/portrait/.test(chunk)) 
 {
     chunk = 'street-portraits'
 }
-else if (/prices/.test(chunk)) 
+else if (/price/.test(chunk)) 
 {
     chunk = 'prices'
 }
@@ -34,11 +32,11 @@ else if (/street/.test(chunk))
 {
     chunk = 'street-photography'
 }
-else if (/tandcs/.test(chunk)) 
+else if (/tandc/.test(chunk)) 
 {
     chunk = 'tandcs'
 }
-else if (/terms/.test(chunk)) 
+else if (/term/.test(chunk)) 
 {
     chunk = 'terms'
 }
