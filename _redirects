@@ -5,11 +5,12 @@
 
 /cosplay.*					/cosplay-photography	301
 /cosplay_*					/cosplay-photography	301
-/cosplay-photography.php*   /cosplay-photography	301
 /cosplayphotography*        /cosplay-photography	301
 
 /street.*					/street-photography		301
 /street_photography*        /street-photography		301
+/streetphotography*         /street-photography		301
 
 /portraits*					/street-portraits		301
 /street_portraits*          /street-portraits		301
+/streetportraits*           /street-portraits		301
