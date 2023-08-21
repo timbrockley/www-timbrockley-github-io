@@ -23,5 +23,10 @@
 /index-street-portrait*		/street-portraits		301
 /index-streetportrait*		/street-portraits		301
 
+/street_*    		/street-photography		301
+
+/index_street*		/street-photography		301
+/index-street*   	/street-photography		301
+
 /home*		/	301
 /index*		/	301
