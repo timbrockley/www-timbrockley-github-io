@@ -6,12 +6,14 @@
 
 /portrait*			/street-portraits		302
 
-/streetportrait*   /street-portraits		301
+/street-portrait    /street-portraits		301
+/street-portrait/   /street-portraits		301
+/street_portrait*   /street-portraits		301
+/streetportrait*    /street-portraits		301
 /index_portrait*    /street-portraits		301
 /index-portrait*    /street-portraits		301
 
-/street_*    		/street-photography		301
-/streetphoto*		/street-photography		301
+/street*    		/street-photography		301
 /index_street*  	/street-photography		301
 /index-street*  	/street-photography		301
 
