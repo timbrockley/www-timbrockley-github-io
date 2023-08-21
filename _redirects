@@ -2,5 +2,5 @@
 /home*				    	/						301
 /index*				    	/						301
 
-/*_*                        /:splat-:splat			301
+/:first_:second          	   /:first_-:second			301
 /*.php					    /:splat					301
