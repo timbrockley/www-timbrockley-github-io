@@ -4,14 +4,15 @@
 
 /cosplay.*					/cosplay-photography	301
 /cosplay_*					/cosplay-photography	301
-/cosplayphotography*        /cosplay-photography	301
+/cosplayphoto*		        /cosplay-photography	301
 
 /street.*					/street-photography		301
-/street_photography*        /street-photography		301
-/streetphotography*         /street-photography		301
+/street_photo*      		/street-photography		301
+/streetphoto*		        /street-photography		301
 
-/portraits*					/street-portraits		301
-/street_portraits*          /street-portraits		301
-/streetportraits*           /street-portraits		301
+/portrait*					/street-portraits		302
+
+/street_portrait*           /street-portraits		301
+/streetportrait*       		/street-portraits		301
 
 /*.php					    /:splat					301
