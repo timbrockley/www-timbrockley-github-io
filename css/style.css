@@ -1,20 +1,42 @@
 html,body { background-color:#FFF; margin:0px; padding:0px; height:100%; font-family: Arial, Helvetica, sans-serif;color:#000; text-align: center; }
-h2 { margin: 15px 0px 10px 0px; }
+h2 { margin: 10px 0px 10px 0px; }
 h3 { margin: 30px 0px 10px 0px; }
 a { text-decoration:none; color:#000; }
 a:hover { color:blue; }
 
-#info_pane { background-color:#EEE; margin: 10px 50px 20px 50px; padding: 30px 50px 30px 50px; text-align:left; }
+button { color: black; background-color: #EEE; }
+
+#info_pane { background-color:#FFE; margin: 10px 50px 20px 50px; padding: 30px 50px 30px 50px; text-align:left; }
 #info_pane a { color: royalblue; font-weight: bold; }
 #info_pane a:hover { color:blue; }
 
 #footer_text { margin: 0px 0px 0px 0px; padding: 10px 0px 20px 0px; }
 #footer_text a:hover { text-decoration: none; color: #000; }
 
+#contact table, tr, th, td { margin: 0px; padding: 6px; }
+
+#contact_form_email { color: black; }
+
 .links1, .links2 { margin: 10px 0px 10px 0px; font-weight: bold; }
+
 .green_link { color:green; }
 
+.green { color:green; font-size: larger; }
+.red { color:red; font-size: larger; }
+
 .banner { margin: 0px; padding: 0px; width: 90%; height: auto; }
+
+.hidden { display: none; }
+
+#human_test_text
+{
+    margin: 0px;
+    padding: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-weight: bold;
+    outline: thin solid #007fff;
+}
 
 @media only screen and (min-width: 801px)
 {
@@ -25,3 +47,4 @@ a:hover { color:blue; }
 {
     .photo { margin: 0px; padding: 0px; width: 90%; height: auto; }
 }
+

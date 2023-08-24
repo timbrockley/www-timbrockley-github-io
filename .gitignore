@@ -1,3 +1,5 @@
 # Local Netlify folder
 .netlify
-_archive
+_archivecontact.html
+_archive/
+contact.html
