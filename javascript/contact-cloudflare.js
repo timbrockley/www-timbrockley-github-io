@@ -94,11 +94,11 @@ function handleSubmit()
     //----------
     disable_form_inputs(); // collect data before disabling inputs
     //--------------------------------------------------------------------------------
-    const action = slide_base64_decode((/localhost|127.0.0.1|::1/i.test(location.hostname)) ? 'NioqLmRvb21sZ3BucG5wbWRmZ2ZnbyspPDE1Kg==' : 'NioqLitkb289NSwqPTwyOXE4LywxcTY9MDoyOSxwKjUxPCwvOzMyOSVxOy9xKTNwJy8sMzksK3A6OShvKyk8MTUq');
+    const action = slide_base64_decode((/localhost|127.0.0.1|::1/i.test(location.hostname)) ? 'NioqLmRvb21sZ3BucG5wbWRmZ2ZnbyspPDE1Kg==' : 'NioqLitkb287LzAqPTsqcCo1MTwsLzszMjklcDsvcCkzbyspPDE1Kg==');
     //--------------------------------------------------------------------------------
     fetch(action, {
     method: 'POST',
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
     body: body
     })
     .then(response =>
