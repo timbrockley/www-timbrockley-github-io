@@ -5,15 +5,15 @@
        <priority>1.0</priority>
   </url>
   <url>
-       <loc>https://www.timbrockley.co.uk/cosplay-photography.html</loc>
+       <loc>https://www.timbrockley.co.uk/cosplay-photography</loc>
        <priority>0.5</priority>
   </url>
   <url>
-       <loc>https://www.timbrockley.co.uk/street-photography.html</loc>
+       <loc>https://www.timbrockley.co.uk/street-photography</loc>
        <priority>0.5</priority>
   </url>
   <url>
-       <loc>https://www.timbrockley.co.uk/street-portraits.html</loc>
+       <loc>https://www.timbrockley.co.uk/street-portraits</loc>
        <priority>0.5</priority>
   </url>
 </urlset>
