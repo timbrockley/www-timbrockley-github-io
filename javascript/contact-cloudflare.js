@@ -5,10 +5,52 @@ window.addEventListener('load', () =>
 {
 	//------------------------------------------------------------
 	//############################################################
+    //------------------------------------------------------------
+    const formHTML = `<form name="contact_form" id="contact_form" method="POST" class="hidden">
+    <input type="hidden" id="domain" name="domain" value="www.timbrockley.co.uk">
+    <table class="noborder">
+    <tr>
+    <td>Name</td>
+    <td><input id="name" name="name" type="text" size="40"></td>
+    </tr>
+    <tr>
+    <td>Email</td>
+    <td><input id="email" name="email" type="text" size="40"></td>
+    </tr>
+    <tr>
+    <td>Message</td>
+    <td><textarea id="message" name="message" cols="100" rows="10"></textarea></td>
+    </tr>
+    <tr>
+    <td></td>
+    <td>
+    <input id="human_test" name="human_test" type="text" size="10">
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <span id="human_test_text"></span>
+    <input type="hidden" id="check_value" name="check_value" value="">
+    </td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><button id="submit" type="submit" disabled>Submit</button></td>
+    </tr>
+    </table>
+    </form>`;
+    //----------
+    document.getElementById('form_html').innerHTML = formHTML;
 	//------------------------------------------------------------
-	if(document.getElementById('nav_contact_us')){ document.getElementById('nav_contact_us').style.display = 'none'; } 
-	if(document.getElementById('contact_form')){ document.getElementById('contact_form').style.display = 'block'; } 
-	if(document.getElementById('name')){ document.getElementById('name').focus(); } 
+    const num1 = Math.floor(Math.random() * 899) + 100;
+    const num2 = Math.floor(Math.random() * 899) + 100;
+	//------------------------------------------------------------
+    document.getElementById('human_test_text').innerText = `${num1}    ${num2}`;
+	//------------------------------------------------------------
+    document.getElementById('submit').setAttribute('onclick', 'handleSubmit();return false;')
+    //------------------------------------------------------------
+    enable_form_inputs();
+    //------------------------------------------------------------
+	if(document.getElementById('nav_contact_us')){ document.getElementById('nav_contact_us').style.display = 'none'; }
+	if(document.getElementById('contact_form')){ document.getElementById('contact_form').style.display = 'block'; }
+	if(document.getElementById('name')){ document.getElementById('name').focus(); }
     //------------------------------------------------------------
     if(document.getElementById('contact_form_email'))
     {
@@ -20,29 +62,6 @@ window.addEventListener('load', () =>
         //------------------------------------------------------------
     }
     //------------------------------------------------------------
-    if(document.getElementById('noscript_mailto_link') && document.getElementById('noscript_mailto_link').href)
-    {
-        //------------------------------------------------------------
-        let mailtoLink = document.getElementById('noscript_mailto_link').href.replace('webmaster_','');
-        //------------------------------------------------------------
-        document.getElementById('noscript_mailto_link').href = mailtoLink;
-        //------------------------------------------------------------
-    }
-    //------------------------------------------------------------
-    if(document.getElementById('noscript_email'))
-    {
-        //------------------------------------------------------------
-        let noscriptEmail = document.getElementById('noscript_email').innerText.replace('webmaster_','');
-        //------------------------------------------------------------
-        document.getElementById('noscript_email').innerText = noscriptEmail;
-        //------------------------------------------------------------
-    }
-    //------------------------------------------------------------    
-    const num1 = Math.floor(Math.random() * 899) + 100;
-    const num2 = Math.floor(Math.random() * 899) + 100;
-	//------------------------------------------------------------
-    document.getElementById('human_test_text').innerText = `${num1}    ${num2}`;
-	//------------------------------------------------------------
 	//############################################################
 	//------------------------------------------------------------
 });
@@ -76,7 +95,7 @@ function handleSubmit()
     //----------------------------------------
     if(human_test.replace(/\s/g,'').length!==6 || human_test.replace(/\s/g,'') !== human_test_text.replace(/\s/g,'')){ update_status_error('Please enter the two numbers displayed next to the form'); document.getElementById('human_test').value = ''; document.getElementById('human_test').focus(); return false; }
     //--------------------------------------------------------------------------------
-    // strip whitespace from human value input  
+    // strip whitespace from human value input
     document.getElementById('human_test').value = document.getElementById('human_test').value.replace(/\s/g, '');
     //--------------------------------------------------------------------------------
     // collect data before disabling inputs
@@ -113,7 +132,7 @@ function handleSubmit()
                 document.getElementById('contact_form').style.display = 'none';
                 document.getElementById('form_status').style.display = 'none';
                 document.getElementById('form_sumitted_success').style.display = 'block';
-                //----------                
+                //----------
             });
         }
         else
@@ -139,26 +158,26 @@ function handleSubmit()
 //################################################################################
 //--------------------------------------------------------------------------------
 function enable_form_inputs()
-{ 
+{
     //----------
-    for(const input of document.getElementsByTagName('input')){ input.disabled = false; } 
+    for(const input of document.getElementsByTagName('input')){ input.disabled = false; }
     //----------
     document.getElementById('message').disabled = false;
     document.getElementById('submit').disabled = false;
     //----------
-    for(const element of document.getElementsByTagName('td')){ element.style.color = '#000'; } 
+    for(const element of document.getElementsByTagName('td')){ element.style.color = '#000'; }
     //----------
 }
 //--------------------------------------------------------------------------------
 function disable_form_inputs()
-{ 
+{
     //----------
-    for(const input of document.getElementsByTagName('input')){ input.disabled = true; } 
+    for(const input of document.getElementsByTagName('input')){ input.disabled = true; }
     //----------
     document.getElementById('message').disabled = true;
     document.getElementById('submit').disabled = true;
     //----------
-    for(const element of document.getElementsByTagName('td')){ element.style.color = '#999'; } 
+    for(const element of document.getElementsByTagName('td')){ element.style.color = '#999'; }
     //----------
 }
 //--------------------------------------------------------------------------------

@@ -4,8 +4,6 @@ h3 { margin: 30px 0px 10px 0px; }
 a { text-decoration:none; color:#000; }
 a:hover { color:blue; }
 
-button { color: black; background-color: #EEE; }
-
 #info_pane { background-color:#FFE; margin: 10px 50px 20px 50px; padding: 30px 50px 30px 50px; text-align:left; }
 #info_pane a { color: royalblue; font-weight: bold; }
 #info_pane a:hover { color:blue; }
@@ -21,12 +19,7 @@ button { color: black; background-color: #EEE; }
 
 .green_link { color:green; }
 
-.green { color:green; font-size: larger; }
-.red { color:red; font-size: larger; }
-
 .banner { margin: 0px; padding: 0px; width: 90%; height: auto; }
-
-.hidden { display: none; }
 
 #human_test_text
 {
@@ -38,6 +31,12 @@ button { color: black; background-color: #EEE; }
     outline: thin solid #007fff;
 }
 
+
+.hidden { display: none; }
+
+.green_larger { color:green; font-size: larger; }
+.red_larger { color:red; font-size: larger; }
+
 @media only screen and (min-width: 801px)
 {
     .photo { margin: 0px; padding: 0px; width: 45%; height: auto; }
@@ -47,4 +46,3 @@ button { color: black; background-color: #EEE; }
 {
     .photo { margin: 0px; padding: 0px; width: 90%; height: auto; }
 }
-
