@@ -8,6 +8,7 @@ window.addEventListener('load', () =>
     //------------------------------------------------------------
     const formHTML = `<form name="contact_form" id="contact_form" method="POST" class="hidden">
     <input type="hidden" id="domain" name="domain" value="www.timbrockley.co.uk">
+    <span class="hidden"><input id="honeypot" name="honeypot" value="" type="text"></span>
     <table class="noborder">
     <tr>
     <td>Name</td>
@@ -69,8 +70,21 @@ window.addEventListener('load', () =>
 function handleSubmit()
 {
     //--------------------------------------------------------------------------------
-    update_status();
+    update_status(); // clear status message
     //--------------------------------------------------------------------------------
+    // if hidden honeypot input populated then assume done by a robot
+    if(document.getElementById('honeypot').value!=='')
+    { 
+        //--------------------------------------------------------------------------------
+        disable_form_inputs();
+        //--------------------------------------------------------------------------------
+        document.getElementById('form_status').style.display = 'none';
+        document.getElementById('form_sumitted_fail').style.display = 'block';
+        //--------------------------------------------------------------------------------
+        return false;
+        //--------------------------------------------------------------------------------
+    }
+    //----------------------------------------
     let name = document.getElementById('name').value.replace(/^\s+/,'').replace(/\s+$/,'');
     let email = document.getElementById('email').value.replace(/\s*/g,'');
     let message = document.getElementById('message').value.replace(/^\s+/,'').replace(/\s+$/,'');
