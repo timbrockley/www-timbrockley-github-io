@@ -18,6 +18,7 @@ a:hover { color:blue; }
 .links1, .links2 { margin: 10px 0px 10px 0px; font-weight: bold; }
 
 .green_link { color:green; }
+.blog_link { color:#007fff; }
 
 .banner { margin: 0px; padding: 0px; width: 90%; height: auto; }
 
