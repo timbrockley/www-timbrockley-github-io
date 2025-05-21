@@ -39,3 +39,6 @@
 /tandcs.php*	/tandcs		301
 
 /terms.php*		/terms		301
+
+/terms/prices	/prices		301
+/terms/prices/	/prices		301
